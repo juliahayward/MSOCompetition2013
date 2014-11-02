@@ -1,0 +1,76 @@
+﻿Computer Programming questions:
+
+
+Problem 1 (30 points)
+-------------
+Genetic Testing
+
+
+You have been supplied with two spreadsheets, TestCases.CSV and TrainingGenes.CSV
+TrainingGenes has a very large sample of people who’ve undergone genetic testing and beeing classified into various ethnicities as indicated by a three letter acronym (e.g. YRI, JPT, GIH, etc…)
+Each column corresponds a to specific genetic marker, where a ‘1’ indicates a positive result and a ‘0’ a negative one, and a ‘?’ indicates an indefinite result for that test or corrupt data.
+Based on the training data, your job is to write a program that can select the ethnicity (corresponding three letter acronym) with the highest probability for a new test person. 
+TestCases.CSV has genetic testing results for 11 people, which you are to classify into their corresponding ethnicities.
+
+
+
+
+Problem 2 (15 points)
+-------------
+
+
+A file "minidictionary.txt" contains some words that are palindromes - if the order of the letters is reversed the result is the same word.
+
+
+Write a program to read in the file and display all the palindromes, one per line, and adjacent to each word give the number of times it occurs in the text.
+
+
+
+
+
+
+Problem 3 (20 points)
+-------------
+
+
+A positive integer is said to be a palindrome with respect to base b, if its representation in base b reads the same from left to right as from right to left. Palindromes are formed as follows: 
+
+
+Given a number, reverse its digits and add the resulting number to the original number. If the result isn't a palindrome, repeat the process. For example, start with 87 base 10. Applying this process, we obtain: 
+
+
+87 + 78 = 165 
+165 + 561 = 726 
+726 + 627 = 1353 
+1353 + 3531 = 4884, a palindrome 
+
+
+Whether all numbers eventually become a palindrome under this process is unproved, but all base 10 numbers less than 10,000 have been tested. Everyone becomes a palindrome in a relatively small number of steps (of the 900 3-digit numbers, 90 are palindromes to start with and 735 of the remainder take fewer than 5 reversals and additions to yield a palindrome). Except, that is, for 196. Although no proof exists that it will not produce a palindrome, this number has been carried through to produce a 2 million-digit number without producing a palindrome. 
+Write a program that takes two integers as its input (each set will consist of a positive integer and its base. Bases will be in the range 2 – 10), and using the above method, tries to create a palindrome.
+OUTPUT: Print the palindrome produced. If no palindrome is produced after 10 additions, print the word “none” and the last sum. 
+
+
+SAMPLE INPUT                                         SAMPLE OUTPUT 
+1. 87, 10                                                          4884 
+2. 1211, 3                                                         112211 
+3. 3112 ,4                                                         233332 
+4. 196, 10                                                  NONE,18211171                                       
+
+
+
+
+
+
+Problem 4 (45 points)
+-------------
+
+
+Write a program to play the following game against a user. Your program must win from a situation in which it is possible to force a win, and it must avoid losing. 
+
+
+The user must be able to choose to play first or second. When a game is finished the program must offer the user the opportunity to play again.
+
+
+
+
+THE GAME:   Two players take turns in choosing a number from 1 to 9. Once a number has been chosen it may not be chosen again in that game. A player whose chosen numbers include exactly three numbers that add up to 15 is the winner. If neither player wins the game is a draw.
